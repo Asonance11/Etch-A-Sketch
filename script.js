@@ -1,7 +1,10 @@
 const grid = document.querySelector('#gameContainer');
+const clearButton = document.querySelector('#clearBtn')
 let value = prompt("enter ur value");
 parseInt(value);
 
+createGrid();
+clearButton.addEventListener('click', reloadGrid);
 function createGrid(){
     grid.style.gridTemplateColumns = `repeat(${value}, 1fr)`
     grid.style.gridTemplateRows = `repeat(${value}, 1fr)`
@@ -14,4 +17,10 @@ function createGrid(){
         grid.appendChild(gridElement)
     }
 }
-createGrid();
+function clearGrid(){
+   grid.innerHTML = ''
+}
+function reloadGrid(){
+    clearGrid();
+    createGrid();
+}
