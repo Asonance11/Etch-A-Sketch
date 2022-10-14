@@ -10,7 +10,13 @@
 </head>
 <body>
     <h2>Etch A Sketch</h2>
-    <button id="clearBtn" class="clrBtn">Clear</button>
+    <div class="settings" id="settings">
+        <p>16 x 16</p>
+        <input type="range" min="16" max="64" id="mySlider" class="slider">
+        <button id="rainbow" class="rainbow">RGB</button>
+        <button id="eraser" class="eraser">Eraser</button>
+        <button id="clearBtn" class="clrBtn">Clear</button>
+    </div>
     <div id="gameContainer" class="gameContainer">
         
     </div>
