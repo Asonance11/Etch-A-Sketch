@@ -27,7 +27,7 @@ slider.addEventListener('input', () => {
 rainbow.addEventListener('click', function(){
     let val = document.getElementById('mySlider').value;
     let cell = grid.children;
-    for (let i = 1; i <= val * val; i++) {
+    for (let i = 0; i <= val * val; i++) {
         cell[i].addEventListener('mouseover', function(event){
             event.target.style.backgroundColor = getRandomColor();
         }); 
@@ -36,7 +36,7 @@ rainbow.addEventListener('click', function(){
 blackbtn.addEventListener('click', function(){
     let val = document.getElementById('mySlider').value;
     let cell = grid.children;
-    for (let i = 1; i <= val * val; i++) {
+    for (let i = 0; i <= val * val; i++) {
         cell[i].addEventListener('mouseover', function(event){
             event.target.style.backgroundColor = `black`;
         }); 
@@ -45,7 +45,7 @@ blackbtn.addEventListener('click', function(){
 eraser.addEventListener('click', function(){
     let val = document.getElementById('mySlider').value;
     let cell = grid.children;
-    for (let i = 1; i <= val * val; i++) {
+    for (let i = 0; i <= val * val; i++) {
         cell[i].addEventListener('mouseover', function(event){
             event.target.style.backgroundColor = `white`;
         }); 
@@ -54,7 +54,7 @@ eraser.addEventListener('click', function(){
 clearButton.addEventListener('click', function(){
     let val = document.getElementById('mySlider').value;
     let cell = grid.children;
-    for (let i = 1; i <= val * val; i++) {
+    for (let i = 0; i <= val * val; i++) {
         cell[i].style.backgroundColor = `white`
     }
 }); 
