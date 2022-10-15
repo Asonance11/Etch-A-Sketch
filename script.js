@@ -1,4 +1,4 @@
-const grid = document.querySelector('#gameContainer');
+const grid = document.querySelector('#Container');
 const clearButton = document.querySelector('#clearBtn')
 let value = prompt("enter ur value");
 parseInt(value);
