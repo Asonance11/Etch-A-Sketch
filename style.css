@@ -12,7 +12,7 @@ body{
 main{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
     align-items: center;
     gap: 50px;
 }
@@ -27,6 +27,30 @@ h2{
 .settings p{
     text-align: center;
     padding-bottom: 5px;
+}
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    border-radius: 10px;
+    background: #d3d3d3;
+    outline: none;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;    
 }
 .Btn{
     margin-top: 10px;
